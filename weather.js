@@ -3,8 +3,7 @@ const Usermap = document.getElementById("location-map");
 const weatherdetails = document.getElementById("weather-details")
 const lat = document.getElementById('lat')
 const long = document.getElementById('long')
-lat.innerText = `Lat: ${userLocation.latitude}`
-long.innerText = `Long: ${userLocation.longitude}`
+
 Usermap.innerHTML = `<iframe src="https://maps.google.com/maps?q=${userLocation.latitude}, ${userLocation.longitude}&z=15&output=embed" width="100%" height="100%" frameborder="0" style="border:0"></iframe>`
 
 function fetchWeather(latitude, longitude) {
@@ -13,6 +12,8 @@ function fetchWeather(latitude, longitude) {
 
     async function checkWeather() {
       const response = await fetch(apiUrl + `&appid=${apiKey}`);
+      lat.innerText = `Lat: ${latitude}`
+      long.innerText = `Long: ${longitude}`
       let data = await response.json();
       console.log(data);
 
