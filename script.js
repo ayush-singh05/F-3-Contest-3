@@ -25,6 +25,7 @@ function showPosition(position) {
 
     // You can use the latitude and longitude values as needed.
 }
+
 function showError(error) {
     switch (error.code) {
         case error.PERMISSION_DENIED:
