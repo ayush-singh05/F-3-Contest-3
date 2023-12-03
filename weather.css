@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    padding: 20px 80px;
+    background-color: #360369;
+}
+.container > h2{
+    color: #FFF;
+}
+.container > p{
+    color: #8c8585;
+}
+#location-map {
+    margin: 10px auto;
+    width: 80vw;
+    height: 80vh;
+    /* border: 1px solid red; */
+    padding: 4px;
+}
+
+.weather-data {
+    padding: 0 80px;
+    background-color: #FFF;
+    margin-top: 40px;
+}
+.weather-data > h2 {
+    margin: 20px 0;
+    
+} 
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    flex-wrap: wrap;
+}
+
+.data > p {
+    padding: 5px 4px;
+    margin: 10px 10px;
+    color: #FFF;
+    height: 35px;
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #270846;
+}
+#location{
+    display: flex;
+    padding: 10px;
+;
+
+}
+#location > p {
+    width: auto;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    color: #FFF;
+    height: 35px;
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #270846;
+
+    
+}
