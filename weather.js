@@ -1,4 +1,6 @@
-const userLocation = JSON.parse(localStorage.getItem("location"))
+
+document.addEventListener('DOMContentLoaded',()=>{
+  const userLocation = JSON.parse(localStorage.getItem("location"))
 const Usermap = document.getElementById("location-map");
 const weatherdetails = document.getElementById("weather-details")
 const lat = document.getElementById('lat')
@@ -28,9 +30,10 @@ function fetchWeather(latitude, longitude) {
          
           <p class="data-9 geotags">Feels like : ${data.main.feels_like}°C</p>
       </div>`
-  
+      // localStorage.clear();
     }
     checkWeather();
   
 };
 fetchWeather(userLocation.latitude,userLocation.longitude)
+})
